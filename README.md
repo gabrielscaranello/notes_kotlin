@@ -1,7 +1,8 @@
 # APP DE NOTAS COM KOTLIN
 
-APRESENTADO NA MATÉRIA DE PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS
 
-INSTITUTO FEDERAL DO PARANÁ - CAMPUS ASSIS CHATEAUBRIAND
+Apresentado na matéria de programação para dispositivos móveis
 
-ALUNO GABRIEL JOSÉ SCARANELLO
+Instituto Federal do Paraná - Campus Assis Chateaubriand
+
+Aluno Gabriel José Scaranello
