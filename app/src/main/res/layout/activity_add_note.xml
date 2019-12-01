@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titleEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Título da Nota"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:singleLine="true">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/descEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Descrição da Nota"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:minHeight="100dp"
+                    android:gravity="top"
+                    android:singleLine="false">
+                </EditText>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/salveNote"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Salvar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="addNoteFunc"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

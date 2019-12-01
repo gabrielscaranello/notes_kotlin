@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/descNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição da nota"
+            ></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="33dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/deleteNote"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_delete"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/editNote"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_edit"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/copyNote"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_copy"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/shareNote"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_share"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
